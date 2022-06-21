@@ -1,0 +1,8 @@
+*:not(head) {
+    display: flex;
+    border: 1px dotted red;
+}
+
+.body {
+    flex-direction: column;
+}
