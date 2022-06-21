@@ -3,6 +3,7 @@
     border: 1px dotted red;
 }
 
+/* Sets up header specification and justifications. Logo was an image, so I had to size it to look natural with the text.*/
 .header {
     background-color: #1f2937;
     padding: 8px 0px;
@@ -40,7 +41,7 @@ a:hover {
 img:hover {
     border-bottom: 1px solid skyblue;
 }
-
+/*Set up entire page general layout.*/
 .body {
     flex-direction: column;
     min-width: 300px;
@@ -48,4 +49,19 @@ img:hover {
 
 .main {
     flex-direction: column;
+}
+
+/*Main sets up the four main sections while body carries even the header and footer. Below is all of the sections in main! */
+
+/* Define justification for page resizing*/
+.section-one,
+.section-two,
+.section-three,
+.section-four {
+    justify-content: space-around;
+}
+
+/*setting color specifications and etc*/
+.section-one {
+
 }
