@@ -3,6 +3,49 @@
     border: 1px dotted red;
 }
 
+.header {
+    background-color: #1f2937;
+    padding: 8px 0px;
+    max-height: 30px;
+    align-self: stretch;
+    align-items: center;
+    /*I spent so much f-wording time trying to figure out how to keep the distance between the left and right header items while keeping the background color spanning the whole page,
+    and also being able to maintain that ratio when changing the webpage size. 'justify-content: space-around;' is what did it for me, if anyone else is reading this and gets stuck.
+    */
+    justify-content: space-around;
+}
+
+.header-nav {
+    gap: 0px 16px;
+    font-size: 18px;
+    flex-wrap: nowrap;
+}
+
+.logo {
+    height: 30px;
+    width: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #f9faf8;
+}
+
+a:hover {
+    color: skyblue;
+    font-size: 20px;
+    gap: 0px 20px;
+}
+
+img:hover {
+    border-bottom: 1px solid skyblue;
+}
+
 .body {
+    flex-direction: column;
+    min-width: 300px;
+}
+
+.main {
     flex-direction: column;
 }
