@@ -2,8 +2,9 @@
     border: 1px dotted red;
 }
 
-/* Sets up header specification and justifications. Logo was an image, so I had to size it to look natural with the text.*/
-.header {
+/* Sets up header and footer specification and justifications. Logo was an image, so I had to size it to look natural with the text.*/
+.header,
+.footer {
     display: flex;
     background-color: #1f2937;
     padding: 8px 0px;
@@ -14,6 +15,12 @@
     and also being able to maintain that ratio when changing the webpage size. 'justify-content: space-around;' is what did it for me, if anyone else is reading this and gets stuck.
     */
     justify-content: space-around;
+}
+
+/*style footer */
+.footer {
+    color: #f9faf8;
+    height: 100%;
 }
 
 .header-nav {
@@ -67,9 +74,9 @@ img:hover {
     display: flex;
     background-color: #1f2937;
     color: #f9faf8;
-    justify-content: space-between;
+    justify-content: center;
     height: 800px;
-    gap: 32px;
+    gap: 48px;
 }
 
 /* section 1 subsects */
@@ -82,7 +89,6 @@ img:hover {
     width: 100%;
     flex-flow: column;
     gap: 8px;
-    margin: auto;
 }
 
 .section-one h1 {
@@ -104,7 +110,6 @@ img:hover {
     max-width: 400px;
     width: 100%;
     align-items: center;
-    margin: auto;
 }
 
 .s1-image {
