@@ -1,6 +1,6 @@
-*:not(head) {
-    display: flex;
-    border: 1px dotted red;
+*:not(head,h1,button,p) {
+    display: flex;/*
+    border: 1px dotted red;*/
 }
 
 /* Sets up header specification and justifications. Logo was an image, so I had to size it to look natural with the text.*/
@@ -53,15 +53,63 @@ img:hover {
 
 /*Main sets up the four main sections while body carries even the header and footer. Below is all of the sections in main! */
 
-/* Define justification for page resizing*/
-.section-one,
-.section-two,
-.section-three,
-.section-four {
-    justify-content: space-around;
-}
 
 /*setting color specifications and etc*/
 .section-one {
+    background-color: #1f2937;
+    color: #f9faf8;
+    justify-content: space-around;
+    height: 800px;
+    flex-grow: 1;
+    gap: 32px;
+}
 
+/* section 1 subsects */
+.section-one-l {
+    align-items: flex-start;
+    justify-content: center;
+    /* set max box width to make stretching with image better*/
+    max-width: 400px;
+    width: 100%;
+    flex-flow: column;
+}
+
+.section-one h1 {
+    font-size: 48px;
+    font-weight: 'extra-bold';
+    color: #f9faf8;
+    margin: 0px;
+}
+
+.section-one p {
+    color: #f9faf8;
+    font-size: 18px;
+}
+
+.section-one-r {
+    max-width: 400px;
+    width: 100%;
+    align-items: center;
+}
+
+.s1-image {
+    max-width: 400px;
+    width: 100%;
+    height: 70%;
+}
+
+/*button styling and practical elements*/
+button {
+    background-color: #3882f6;
+    border-radius: 5px;
+    padding: 4px 8px;
+    color: #f9faf8;
+    width: auto;
+    border: 0;
+    font-weight: bold;
+}
+
+button:hover {
+    box-shadow: -1px 1px skyblue;
+    background-color: #3662f1;
 }
