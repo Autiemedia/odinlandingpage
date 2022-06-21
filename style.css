@@ -67,7 +67,7 @@ img:hover {
     display: flex;
     background-color: #1f2937;
     color: #f9faf8;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 800px;
     gap: 32px;
 }
@@ -82,6 +82,7 @@ img:hover {
     width: 100%;
     flex-flow: column;
     gap: 8px;
+    margin: auto;
 }
 
 .section-one h1 {
@@ -103,6 +104,7 @@ img:hover {
     max-width: 400px;
     width: 100%;
     align-items: center;
+    margin: auto;
 }
 
 .s1-image {
@@ -177,7 +179,7 @@ button:hover {
 /*Section Three stuff below */
 
 .section-three {
-    height: 450px;
+    height: 600px;
     background-color: #e5e7eb;
     display: flex;
     flex-flow: column;
