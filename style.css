@@ -1,14 +1,23 @@
+/*
 * {
     border: 1px dotted red;
-}
+}*/
 
 /* Sets up header and footer specification and justifications. Logo was an image, so I had to size it to look natural with the text.*/
+
+.header,
+.section-one,
+.footer {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, 
+                url(https://images.pexels.com/photos/10812723/pexels-photo-10812723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) repeat center center fixed;
+    background-size:contain; 
+}
+
 .header,
 .footer {
     display: flex;
     background-color: #1f2937;
     padding: 8px 0px;
-    max-height: 30px;
     align-self: stretch;
     align-items: center;
     /*I spent so much f-wording time trying to figure out how to keep the distance between the left and right header items while keeping the background color spanning the whole page,
@@ -17,10 +26,16 @@
     justify-content: space-around;
 }
 
+.header {
+    max-height: 30px;
+}
+
 /*style footer */
 .footer {
+    display: flex;
+    justify-content: center;
     color: #f9faf8;
-    height: 100%;
+    height: 50px;
 }
 
 .header-nav {
@@ -41,7 +56,18 @@ a :not(button) {
     color: #f9faf8;
 }
 
+a {
+    text-decoration: none;
+    color: #f9faf8;
+}
+
 a:hover :not(button){
+    color: white;
+    font-size: 20px;
+    gap: 0px 20px;
+}
+
+a:hover {
     color: skyblue;
     font-size: 20px;
     gap: 0px 20px;
@@ -52,8 +78,12 @@ a:visited {
     color: #f9faf8;
 }
 
+img {
+    border-radius: 5px;
+}
+
 img:hover {
-    border-bottom: 1px solid skyblue;
+    box-shadow: 1px 5px 5px #1f2937;
 }
 /*Set up entire page general layout.*/
 .body {
@@ -75,7 +105,7 @@ img:hover {
     background-color: #1f2937;
     color: #f9faf8;
     justify-content: center;
-    height: 800px;
+    height: 600px;
     gap: 48px;
 }
 
@@ -185,7 +215,8 @@ button:hover {
 
 .section-three {
     height: 600px;
-    background-color: #e5e7eb;
+    background: url(https://images.pexels.com/photos/3630742/pexels-photo-3630742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center center fixed;
+    background-size: cover;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -197,7 +228,7 @@ button:hover {
     font-size: 36px;
     font-weight: light;
     font-style: italic;
-    color: #1f2937;
+    color: #f9faf8;
     max-width: 700px;
     margin: auto;
     gap: 0px;
