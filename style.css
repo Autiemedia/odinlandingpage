@@ -209,6 +209,8 @@ button:hover {
 .s2-img {
     height: 100px;
     width: 100px;
+    border: 2px solid #1f2937;
+    padding: 4px;
 }
 
 /*Section Three stuff below */
