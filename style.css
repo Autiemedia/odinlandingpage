@@ -214,9 +214,12 @@ button:hover {
     display: flex;
     margin: auto;
     border-radius: 5px;
-    max-width: 900px;
-    height: auto;
-    flex: 1 2 auto;
+    max-width: 960px;
+    width: 100%;
+    max-height: 150px;
+    height: 100%;
+    padding: 16px;
+    justify-content: space-around;
 }
 
 p, h2 {
@@ -225,11 +228,11 @@ p, h2 {
   }
 
 .s4-text {
-    display: inline;
-    padding: 16px;
+    display: flex;
+    flex-direction: column;
     color: #f9faf8;
-    gap: 0px;
-    margin: 0px;
+    gap: 4px;
+    justify-content: center;
 }
 
 .s4-button {
