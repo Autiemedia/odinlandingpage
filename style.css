@@ -1,6 +1,6 @@
 *:not(head,h1,button,p) {
-    display: flex;/*
-    border: 1px dotted red;*/
+    display: flex;
+    border: 1px dotted red;
 }
 
 /* Sets up header specification and justifications. Logo was an image, so I had to size it to look natural with the text.*/
@@ -44,7 +44,6 @@ img:hover {
 /*Set up entire page general layout.*/
 .body {
     flex-direction: column;
-    min-width: 300px;
 }
 
 .main {
@@ -60,7 +59,6 @@ img:hover {
     color: #f9faf8;
     justify-content: space-around;
     height: 800px;
-    flex-grow: 1;
     gap: 32px;
 }
 
@@ -113,3 +111,5 @@ button:hover {
     box-shadow: -1px 1px skyblue;
     background-color: #3662f1;
 }
+
+/*Section two stuff below.*/
