@@ -29,15 +29,20 @@
     width: auto;
 }
 
-a {
+a :not(button) {
     text-decoration: none;
     color: #f9faf8;
 }
 
-a:hover {
+a:hover :not(button){
     color: skyblue;
     font-size: 20px;
     gap: 0px 20px;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #f9faf8;
 }
 
 img:hover {
@@ -76,6 +81,7 @@ img:hover {
     max-width: 400px;
     width: 100%;
     flex-flow: column;
+    gap: 8px;
 }
 
 .section-one h1 {
@@ -110,7 +116,7 @@ img:hover {
 button {
     background-color: #3882f6;
     border-radius: 5px;
-    padding: 4px 8px;
+    padding: 6px 12px;
     color: #f9faf8;
     width: auto;
     border: 0;
@@ -118,7 +124,8 @@ button {
 }
 
 button:hover {
-    background-color: #3662f1;
+    background-color: #f9faf8;
+    color: #3882f6;
 }
 
 /*Section two stuff below.*/
@@ -233,6 +240,10 @@ p, h2 {
     color: #f9faf8;
     gap: 4px;
     justify-content: center;
+}
+
+.s4-button button {
+    border: 1px solid #f9faf8;
 }
 
 .s4-button {
